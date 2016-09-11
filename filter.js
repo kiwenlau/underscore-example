@@ -18,6 +18,15 @@ var companyList = [
     country: "Korean"
 }];
 
-var nameList = _.pluck(companyList, "name");
 
-console.log(nameList); // [ 'Tecnet', 'Google', 'Apple', 'Samsung' ]
+
+var A = _.filter(companyList,
+{  
+    country: "America"
+});
+console.log(A);
+
+/*
+[ { name: 'Google', country: 'America' },
+  { name: 'Apple', country: 'America' } ]
+ */

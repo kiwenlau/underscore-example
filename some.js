@@ -18,6 +18,18 @@ var companyList = [
     country: "Korean"
 }];
 
-var nameList = _.pluck(companyList, "name");
 
-console.log(nameList); // [ 'Tecnet', 'Google', 'Apple', 'Samsung' ]
+
+var A = _.some(companyList,
+{
+    name: "Google"
+});
+console.log(A); // true
+
+
+
+var B = _.some(companyList,
+{
+    name: "Amazon"
+});
+console.log(B); // false

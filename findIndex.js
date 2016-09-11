@@ -18,6 +18,9 @@ var companyList = [
     country: "Korean"
 }];
 
-var nameList = _.pluck(companyList, "name");
+var i = _.findIndex(companyList,
+{
+    name: "Google"
+});
 
-console.log(nameList); // [ 'Tecnet', 'Google', 'Apple', 'Samsung' ]
+console.log(i); // 1
