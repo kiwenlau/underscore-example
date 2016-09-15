@@ -1,6 +1,6 @@
 var _ = require("underscore");
 
-var X = ["b", "b", "d", "d", "d", "d", "a", "c", "c", "c"];
+var X = ["b", "d", "a", "d", "d", "b", "c", "c", "d", "c"];
 
 var Y = _.countBy(X);
 
