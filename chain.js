@@ -1,12 +1,11 @@
 var _ = require("underscore");
 
-var X = ["a", "b", "b", "c", "c", "c", "d", "d", "d", "d"];
+var X = ["b", "b", "d", "d", "d", "d", "a", "c", "c", "c"];
 
 var Y = _.chain(X)
     .countBy()
     .pairs()
     .sortBy(1)
-    .reverse()
     .pluck(0)
     .value();
 

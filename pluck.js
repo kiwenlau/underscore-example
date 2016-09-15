@@ -1,23 +1,12 @@
 var _ = require("underscore");
 
-var companyList = [
-{
-    name: "Tecnet",
-    country: "China"
-},
-{
-    name: "Google",
-    country: "America"
-},
-{
-    name: "Apple",
-    country: "America"
-},
-{
-    name: "Samsung",
-    country: "Korean"
-}];
+var X = [
+    ['a', 1],
+    ['b', 2],
+    ['c', 3],
+    ['d', 4]
+];
 
-var nameList = _.pluck(companyList, "name");
+var Y = _.pluck(X, 0);
 
-console.log(nameList); // [ 'Tecnet', 'Google', 'Apple', 'Samsung' ]
+console.log(Y); // [ 'a', 'b', 'c', 'd' ]
